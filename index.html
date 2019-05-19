@@ -1,106 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-            <script
-            src="http://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-            crossorigin="anonymous"></script>
 
-        <!-- 합쳐지고 최소화된 최신 CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<head>
 
-        <!-- 부가적인 테마 -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <meta charset="UTF-8">
-        <title>정현지의 자기소개 페이지</title>
-    </head>
-    <body>
-        <br>
-        <ul class="nav nav-tabs">
-                <li role="presentation" class="active"><a href="1.html">유년기</a></li>
-                <li role="presentation"><a href="2.html">질풍노도의 시기</a></li>
-                <li role="presentation"><a href="3.html">방황기</a></li>
-                <li role="presentation"><a href="4.html">지금</a></li>
-              </ul>
-              <br>
-        <h1>정현지를 소개합니다</h1>
-        <h2>정현지를 소개해요</h2> <br>
-        <form action="전송받을 대상">
-                아이디 : <input type="text" name="id">
-                비밀번호 : <input type="password", name="pwd">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">이메일 주소</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="이메일을 입력하세요">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">암호</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="암호">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputFile">파일 업로드</label>
-                  <input type="file" id="exampleInputFile">
-                  <p class="help-block">여기에 블록레벨 도움말 예제</p>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> 입력을 기억합니다
-                  </label>
-                </div>
-                <input type="summit" class="btn btn-primary">제출
-              </form> <br>
+  <title>자기소개</title>
 
+  <!-- Font Awesome Icons -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
-            
-           
-        
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-        </form>
-        <br>
-        <img src="snowman.jpg" height=300 title=눈사람><br>
+  <!-- Plugin CSS -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-        <form action="전송받을 대상">
-            <h2>나의 일기장</h2>
-            제목 : <input type="text" name="title"> <br>
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="css/creative.min.css" rel="stylesheet">
 
-            <select name="글의 종류">
-                <option value="good">좋은 일</option>
-                <option value="sad">나쁜 일</option>
-                <option value="soso">그저 그래</option>
-            </select> <br>
+</head>
 
-            내용 : <br> <textarea cols=30 rows=20></textarea> 
-            <br> <input type="submit">
-        </form> <br>
+<body id="page-top">
 
-        <h2>나의 일대기</h2>
-        <ol>
-            <li><a href="1.html">유년기</a></li>
-            <li><a href="2.html">질풍노도의 시기</a></li>
-            <li><a href="3.html">방황기</a></li>
-            <li><a href="4.html">지금</a></li>
-        </ol>
-        <div class="progress">
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                  <span class="sr-only">40% Complete (success)</span>
-                </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">자기소개</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center justify-content-center text-center">
+        <div class="col-lg-10 align-self-end">
+          <h1 class="text-uppercase text-white font-weight-bold">안녕하세요.</h1>
+          <hr class="divider my-4">
+        </div>
+        <div class="col-lg-8 align-self-baseline">
+          <p class="text-white-75 font-weight-light mb-5">저는 컴퓨터 소프트웨어공학과 2학년에 재학중입니다. 멋쟁이 사자처럼 7기에 들어오게 되었는데 열심히 하겠습니다.</p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="page-section bg-primary" id="about">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="text-white mt-0">서비스 소개</h2>
+          <hr class="divider light my-4">
+          <p class="text-white-50 mb-4">제가 만들고 싶은 서비스는 PPT템플릿을 유료로 대여하거나 판매하는 서비스입니다. 흔히 볼 수 있는 유료 폰트 공유 서비스와 같이 ppt 템플릿을 학생, 직장인과 같은 대상 또는 템플릿의 주제에 따라 카테고리를 나누어 공유하는 서비스를 만들고 싶습니다.</p>
+          <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="page-section" id="services">
+    <div class="container">
+      <h2 class="text-center mt-0">At Your Service</h2>
+      <hr class="divider my-4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-gem text-primary mb-4"></i>
+            <h3 class="h4 mb-2">다양한 테마</h3>
+            <p class="text-muted mb-0">사업, 교육, 여행 등의 주제 또는 Simple, Modern, Cool등의 카테고리에 따라 다양한 테마가 있습니다!</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-laptop-code text-primary mb-4"></i>
+            <h3 class="h4 mb-2">주기적인 업데이트</h3>
+            <p class="text-muted mb-0">다양한 테마들이 주기적으로 업데이트 됩니다!</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-globe text-primary mb-4"></i>
+            <h3 class="h4 mb-2">간편한 사용</h3>
+            <p class="text-muted mb-0">원하는 테마를 쉽게 다운받을 수 있습니다!</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-5">
+            <i class="fas fa-4x fa-heart text-primary mb-4"></i>
+            <h3 class="h4 mb-2">템플릿 공유</h3>
+            <p class="text-muted mb-0">원하는 템플릿이 없다면? 공유하고싶은 템플릿이 있다면?? 언제든지 공유할 수 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container-fluid p-0">
+      <div class="row no-gutters">
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Category
               </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                  <span class="sr-only">20% Complete</span>
-                </div>
+              <div class="project-name">
+                Project Name
               </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                  <span class="sr-only">60% Complete (warning)</span>
-                </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Category
               </div>
-              <div class="progress">
-                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                  <span class="sr-only">80% Complete (danger)</span>
-                </div>
+              <div class="project-name">
+                Project Name
               </div>
-    </body>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+            <div class="portfolio-box-caption">
+              <div class="project-category text-white-50">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+            <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+            <div class="portfolio-box-caption p-3">
+              <div class="project-category text-white-50">
+                Category
+              </div>
+              <div class="project-name">
+                Project Name
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="page-section bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
+      <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">부트스트랩 페이지</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-0">Let's Get In Touch!</h2>
+          <hr class="divider my-4">
+          <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+          <div>010-0408-1485</div>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+          <!-- Make sure to change the email address in anchor text AND the link below! -->
+          <a class="d-block" href="https://github.com/hyeonji0409/hyeonji0409.github.io">hyeonji7423@hamail.net</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="small text-center text-muted">Copyright &copy; 2019 - Start Bootstrap</div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+
+</body>
+
 </html>
